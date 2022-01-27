@@ -1,0 +1,24 @@
+<div class="pageStyle">
+    <div class="formStyle">
+        <h4>Login</h4>
+        <br>
+        <label *ngIf="!registeredUser && isNew"  class="font-color" >You are not the registered User. Please click on the below "register" link to register.</label>
+        <br>
+        UserName :
+        <input type="text" name="userName" name="username" [(ngModel)]="user.username">
+        <br>
+        <label *ngIf="!isValidUser" class="font-color" >Please enter User name</label>
+        <br><br>
+        Password :
+        <input type="password" name="password"  name="password" [(ngModel)]="user.password">
+        <br>
+        <label *ngIf="!isValidUser"  class="font-color" >Please enter Password</label>
+        <br><br>
+        <button type="submit" class="btn btn-primary" (click)="goToHome()">Submit</button> &nbsp;
+        <button type="reset" class="btn btn-secondary" (click)="reloadPage()">Cancel</button>
+        <br><br>
+        <div>
+            New User? Please click here to register.<a href="/registration" >Register</a>
+        </div>
+    </div>
+</div>

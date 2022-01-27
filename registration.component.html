@@ -1,0 +1,38 @@
+<div class="pageStyle">
+    <div class="formStyle">
+        <h2 class="sub-heading pl-30">User Registration</h2>
+         <br><br>
+            
+                <label class="input-size text-box-height">FirstName</label>
+                <input type="text" id="firstname" [(ngModel)]="userDetail.firstName"> 
+                 <br><br>
+          
+             
+                <label class="input-size text-box-height">LastName</label>
+                <input type="text" id="lastname" [(ngModel)]="userDetail.lastName">
+                
+            <br><br>
+                <label class="input-size text-box-height">Mobile No</label>
+                 <input type="text" id="mobileno" [(ngModel)]="userDetail.mobileNo">
+                 
+             <br><br>
+                <label class="input-size text-box-height">Email</label>
+                 <input type="text" id="email" [(ngModel)]="userDetail.email"> 
+                 
+             <br><br>
+                <label class="input-size text-box-height">Account No</label>
+                 <input type="text" id="accountno" [(ngModel)]="userDetail.accountNo"> 
+                
+            <br><br>
+                <label class="input-size text-box-height">IFSC Code</label>
+                 <input type="text" id="ifscCode" [(ngModel)]="userDetail.ifscCode"> 
+                
+             <br><br>
+          
+            <div class="form-group">
+                <button type="submitform" class="btn btn-primary" (click)="createUser()">Submit</button>
+        
+            </div>
+        </div>   
+      
+        </div>
